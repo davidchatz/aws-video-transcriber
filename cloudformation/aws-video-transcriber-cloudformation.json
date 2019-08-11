@@ -162,6 +162,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 15,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Uses Elastic Transcoder to extract MP3 audio and produce web friendly MP4 from input videos",
         "Environment": {
           "Variables": {
@@ -260,6 +265,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 15,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Uses Transcribe to extract text from audio",
         "Environment": {
           "Variables": {
@@ -343,6 +353,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 60,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Creates captions for videos from transcription results",
         "Environment": {
           "Variables": {
@@ -412,6 +427,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Loads videos from DynamoDB",
         "Environment": {
           "Variables": {
@@ -460,6 +480,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Loads a single video from DynamoDB",
         "Environment": {
           "Variables": {
@@ -526,6 +551,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Updates the status of a video in DynamoDB",
         "Environment": {
           "Variables": {
@@ -574,6 +604,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Updates the name of a video in DynamoDB",
         "Environment": {
           "Variables": {
@@ -622,6 +657,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Updates the description of a video in DynamoDB",
         "Environment": {
           "Variables": {
@@ -670,6 +710,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Purges a single video from the system",
         "Environment": {
           "Variables": {
@@ -759,6 +804,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Reprocesses a video",
         "Environment": {
           "Variables": {
@@ -846,6 +896,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Fetches a signed URL for uploading video into S3",
         "Environment": {
           "Variables": {
@@ -906,6 +961,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Saves captions to DynamoDB",
         "Environment": {
           "Variables": {
@@ -954,6 +1014,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Fetches captions in WEBVTT format",
         "Environment": {
           "Variables": {
@@ -1002,6 +1067,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Loads vocabulary from DynamoDB",
         "Environment": {
           "Variables": {
@@ -1061,6 +1131,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Checks if vocabulary is ready to save",
         "Environment": {
           "Variables": {
@@ -1117,6 +1192,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Saves vocabulary to DynamoDB",
         "Environment": {
           "Variables": {
@@ -1179,6 +1259,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Loads tweaks from DynamoDB",
         "Environment": {
           "Variables": {
@@ -1227,6 +1312,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 29,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Saves tweaks to DynamoDB",
         "Environment": {
           "Variables": {
@@ -1275,6 +1365,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 900,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Bootstraps videos to process into S3",
         "Environment": {
           "Variables": {
@@ -1335,6 +1430,11 @@
         },
         "Runtime": "nodejs8.10",
         "Timeout": 600,
+        "TracingConfig": {
+          "Mode": {
+            "Ref": "Trace"
+          }
+        },
         "Description": "Performs custom cloudformation initialisation"
       },
       "DependsOn": [
@@ -4422,6 +4522,15 @@
       "ConstraintDescription": "must only contain letters (uppercase and lowercase) and numbers min length: 20 max length: 70",
       "Default": "JustAnApiKeyJustAnApiKey",
       "Description": "An API key to use for accessing the website"
+    },
+    "Trace": {
+      "Type": "String",
+      "AllowedValues": [
+        "Active",
+        "PassThrough"
+      ],
+      "Default": "PassThrough",
+      "Description": "Select Active to enable X-Ray tracing"
     }
   }
 }
